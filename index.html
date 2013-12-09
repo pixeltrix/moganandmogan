@@ -1,0 +1,67 @@
+---
+title: Mogan &amp; Mogan &ndash; helping you achieve your fundraising goals
+layout: default
+section: home
+---
+<div class="right">
+<h2>Helping you achieve your fundraising goals</h2>
+<p>Whether you are beginning your fundraising journey <br>or simply looking to freshen-up your processes and <br>add new donors, Mogan and Mogan can help.</p>
+<h3>Risk-Free Consulting</h3>
+<p>If the cost of our research exceeds the funding <br>generated, we will refund the difference, <br>ensuring you are never out of pocket when <br>you use our services.</p>
+<div id="quotes">
+<blockquote>
+<p class="quote">I greatly enjoyed working with Michael and always found his style both very refreshing and highly effective. His research of grant giving trusts was exceptionally strong.</p>
+<h4>David Burbidge, DL, OBE</h4>
+<p class="position">Former Chairman, Coventry Cathedral Development Trust</p>
+</blockquote>
+<blockquote style="display: none;">
+<p class="quote">His enthusiasm and integrity shone through and enriched, literally, those for whom he worked.</p>
+<h4>The Very Reverend John Petty</h4>
+<p class="position">Dean Emeritus, Coventry Cathedral</p>
+</blockquote>
+<blockquote style="display: none;">
+<p class="quote">The money we spent on employing Michael was returned 10-fold.</p>
+<h4>Dominic McLean</h4>
+<p class="position">Chief Executive, Northampton Volunteer Centre</p>
+</blockquote>
+<blockquote style="display: none;">
+<p class="quote">&hellip; through him things actually happen. I therefore recommend him wholeheartedly without any hesitation.</p>
+<h4>Canon Andrew White</h4>
+<p class="position">Vicar of St George's Church Baghdad and <br>
+Director of the High Council of Religious Leaders in Iraq</p>
+</blockquote>
+<blockquote style="display: none;">
+<p class="quote">Michael has helped accelerate the progress of fundraising beyond the expectation of the Board of Trustees.</p>
+<h4>Emma Hale</h4>
+<p class="position">Head of Fundraising, Heart of England NHS Charity</p>
+</blockquote>
+<blockquote style="display: none;">
+<p class="quote">I recommend him very strongly.</p>
+<h4>The Right Reverend Justin Welby</h4>
+<p class="position">Bishop of Durham</p>
+</blockquote>
+<blockquote style="display: none;">
+<p class="quote">His expertise in this area is exceptional, his enthusiasm is boundless and what surprised us most was the speed at which decisions were made and funds were made available.</p>
+<h4>Kollette Super</h4>
+<p class="position">Associate Head of Design and Visual Arts, <br>
+Coventry School of Art and Design</p>
+</blockquote>
+</div>
+</div>
+<script type="text/javascript">
+  $(function() {
+    setInterval(function() {
+      var slideshow = $('#quotes');
+      var visible = slideshow.children('blockquote:visible');
+
+      if(visible.length > 0) {
+        visible.fadeOut(500, function() {
+          $(this).appendTo(slideshow);
+          slideshow.children('blockquote:first-child').fadeIn(500);
+        });
+      } else {
+        slideshow.children('blockquote:first-child').fadeIn(500);
+      }
+    }, 10000);
+  });
+</script>
