@@ -1,4 +1,6 @@
 source:      .
 destination: _site
 exclude:
-  Capfile
+  - Capfile
+  - Gemfile
+  - Gemfile.lock
