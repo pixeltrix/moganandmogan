@@ -1,3 +1,5 @@
+---
+---
 body {
   background: #390B50;
   color: #FFFFFF;
@@ -53,7 +55,7 @@ div.right {
   top: 32px;
 }
 #logo a {
-  background: url(/images/logo.png) no-repeat left top;
+  background: url({{ site.baseurl }}/images/logo.png) no-repeat left top;
   display: block;
   text-indent: -5000px;
   width: 167px;
@@ -77,7 +79,7 @@ div.right {
   border-left: 1px solid #FFFFFF;
 }
 #navigation li a {
-  background: url(/images/navigation.png) no-repeat 0px 0px;
+  background: url({{ site.baseurl }}/images/navigation.png) no-repeat 0px 0px;
   display: block;
   height: 18px;
   text-indent: -5000px;
@@ -149,20 +151,20 @@ body.contact #contact-tab a {
   background-repeat: no-repeat;
 }
 body.home #body {
-  background-image: url(/images/backgrounds/home.jpg);
+  background-image: url({{ site.baseurl }}/images/backgrounds/home.jpg);
   background-position: left bottom;
 }
 body.about #body {
-  background-image: url(/images/backgrounds/about.jpg);
+  background-image: url({{ site.baseurl }}/images/backgrounds/about.jpg);
 }
 body.services #body {
-  background-image: url(/images/backgrounds/services.jpg);
+  background-image: url({{ site.baseurl }}/images/backgrounds/services.jpg);
 }
 body.contact #body {
-  background-image: url(/images/backgrounds/contact.jpg);
+  background-image: url({{ site.baseurl }}/images/backgrounds/contact.jpg);
 }
 body.home #body h2 {
-  background-image: url(/images/headers/home.png);
+  background-image: url({{ site.baseurl }}/images/headers/home.png);
   height: 74px;
   margin-top: 0px;
   width: 427px;
@@ -172,16 +174,16 @@ body.home #body p {
   width: 427px;
 }
 body.about #body h2 {
-  background-image: url(/images/headers/about.png);
+  background-image: url({{ site.baseurl }}/images/headers/about.png);
 }
 body.services #body h2 {
-  background-image: url(/images/headers/services.png);
+  background-image: url({{ site.baseurl }}/images/headers/services.png);
 }
 body.testimonials #body h2 {
-  background-image: url(/images/headers/testimonials.png);
+  background-image: url({{ site.baseurl }}/images/headers/testimonials.png);
 }
 body.contact #body h2 {
-  background-image: url(/images/headers/contact.png);
+  background-image: url({{ site.baseurl }}/images/headers/contact.png);
 }
 #quotes {
   margin: 20px 0 0 0;
@@ -234,13 +236,13 @@ body.contact #body h2 {
   display: none;
 }
 #testimonial-quotes blockquote {
-  background: url(/images/openq.png) no-repeat left top;
+  background: url({{ site.baseurl }}/images/openq.png) no-repeat left top;
   margin: 0px 0px 15px 0px;
   padding: 0px;
 }
 #testimonial-quotes blockquote span {
   display: block;
-  background: url(/images/closeq.png) no-repeat right bottom;
+  background: url({{ site.baseurl }}/images/closeq.png) no-repeat right bottom;
   padding: 5px 40px 10px 40px;
 }
 #testimonial-quotes p img {
