@@ -3,25 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>{{ page.title }}</title>
+<link rel="stylesheet" href="{{ site.baseurl }}/normalize.css" type="text/css" media="all">
+<link rel="stylesheet" href="{{ site.baseurl }}/skeleton.css" type="text/css" media="all">
 <link rel="stylesheet" href="{{ site.baseurl }}/stylesheet.css" type="text/css" media="all">
-<script type="text/javascript" src="{{ site.baseurl }}/jquery.js"></script>
+{% include fonts.css %}
+{% include fonts.js %}
 </head>
-<body class="{{ page.section }}">
-<div id="header" class="container">
-<h1 id="logo"><a href="{{ site.baseurl }}/">Mogan + Mogan</a></h1>
-<ul id="navigation">
-<li id="home-tab"><a href="{{ site.baseurl }}/">Home</a></li>
-<li id="about-tab"><a href="{{ site.baseurl }}/about">About</a></li>
-<li id="services-tab"><a href="{{ site.baseurl }}/services">Services</a></li>
-<li id="testimonials-tab"><a href="{{ site.baseurl }}/testimonials">Testimonals</a></li>
-<li id="contact-tab"><a href="{{ site.baseurl }}/contact">Contact</a></li>
-</ul>
-</div>
-<div id="body" class="container clearfix">
+<body>
+<div class="container">
+<header id="header">
+<h1><a href="{{ site.baseurl }}/">Mogan + Mogan</a></h1>
+<nav id="menu">
+<ol>
+<li><a href="{{ site.baseurl }}/">Home</a></li>
+<li><a href="{{ site.baseurl }}/about">About</a></li>
+<li><a href="{{ site.baseurl }}/services">Services</a></li>
+<li><a href="{{ site.baseurl }}/testimonials">Testimonals</a></li>
+<li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+</ol>
+</nav>
+</header>
+<section>
 {{ content }}
-</div>
-<div id="footer" class="container">
+</section>
+<footer>
 <p>&copy;{{ site.time | date: "%Y" }} Mogan + Mogan</p>
+</footer>
 </div>
 </body>
 </html>

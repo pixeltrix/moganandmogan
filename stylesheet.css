@@ -1,317 +1,57 @@
 ---
 ---
 body {
-  background: #390B50;
-  color: #FFFFFF;
-  margin: 0px;
-  padding: 0px;
-  font-family: Helvetica;
-  font-size: 14px;
-  line-height: 19px;
+  background: #FFFFFF;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+h1 { font-size: 5.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 3.0rem; line-height: 1.2;  letter-spacing: -.1rem; }
+h3 { font-size: 2.5rem; line-height: 1.2;  letter-spacing: -.1rem; }
+h4 { font-size: 1.8rem; line-height: 1.4;  letter-spacing: 0; }
+h5 { font-size: 1.8rem; line-height: 1.4;  letter-spacing: 0; }
+h6 { font-size: 1.8rem; line-height: 1.4;  letter-spacing: 0; }
+p  { font-size: 1.8rem; line-height: 1.4;  letter-spacing: 0; }
+blockquote  { font-size: 1.8rem; line-height: 1.4;  letter-spacing: 0; }
+
+h1, h2 {
+  font-family: Bodoni W01, Georgia, Times New Roman, serif;
+  font-weight: normal;
+}
+
 h2 {
   color: #84C3D6;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 30px;
-  margin: 0px 0px 20px 0px;
-  text-transform: lowercase;
   font-style: italic;
+  font-weight: normal;
 }
+
 h3 {
   color: #390B50;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 21px;
-  margin: 15px 0px 0px 0px;
 }
-a {
+
+a, a:visited, a:hover, a:active {
   color: #84C3D6;
 }
-p {
-  margin: 0px 0px 12px 0px;
-}
-div.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 920px;
-}
-div.right {
-  float: right;
-  display: inline;
-  margin: 30px 40px 0px 0px;
-  width: 427px;
-}
+
 #header {
-  height: 129px;
-  position: relative;
+  margin: 3rem 0 0 0;
 }
-#logo {
-  position: absolute;
-  margin: 0px;
-  width: 167px;
-  height: 80px;
-  left: -26px;
-  top: 32px;
-}
-#logo a {
-  background: url({{ site.baseurl }}/images/logo.png) no-repeat left top;
-  display: block;
-  text-indent: -5000px;
-  width: 167px;
-  height: 80px;
-}
-#navigation {
-  margin: 0px;
-  padding: 0px;
-  height: 18px;
-  position: absolute;
-  right: 0px;
-  bottom: 29px;
-  list-style: none;
-}
-#navigation li {
-  float: left;
-  display: inline;
-  height: 18px;
-  margin: 0px 0px 0px 10px;
-  padding: 0px 0px 0px 10px;
-  border-left: 1px solid #FFFFFF;
-}
-#navigation li a {
-  background: url({{ site.baseurl }}/images/navigation.png) no-repeat 0px 0px;
-  display: block;
-  height: 18px;
-  text-indent: -5000px;
+
+#header h1 a {
+  display: inline-block;
+  height: 84px;
   overflow: hidden;
-  outline: none;
+  width: 168px;
 }
-#home-tab {
-  border-left: none !important;
-  margin: 0px !important;
-  padding: 0px !important;
-}
-#home-tab a {
-  width: 49px;
-  background-position: 0px 0px !important;
-}
-#about-tab a {
-  width: 79px;
-  background-position: -59px 0px !important;
-}
-#services-tab a {
-  width: 75px;
-  background-position: -148px 0px !important;
-}
-#testimonials-tab a {
-  width: 113px;
-  background-position: -233px 0px !important;
-}
-#contact-tab a {
-  width: 67px;
-  background-position: -356px 0px !important;
-}
-#home-tab a:hover,
-body.home #home-tab a {
-  background-position: 0px -18px !important;
-}
-#about-tab a:hover,
-body.about #about-tab a {
-  background-position: -59px -18px !important;
-}
-#services-tab a:hover,
-body.services #services-tab a {
-  background-position: -148px -18px !important;
-}
-#testimonials-tab a:hover,
-body.testimonials #testimonials-tab a {
-  background-position: -233px -18px !important;
-}
-#contact-tab a:hover,
-body.contact #contact-tab a {
-  background-position: -356px -18px !important;
-}
-#body {
-  background-color: #FFFFFF;
-  background-position: left top;
-  background-repeat: no-repeat;
-  padding: 20px 0px;
-  color: #333333;
-  min-height: 480px;
-  height: auto !important;
-  height: 480px;
-  position: relative;
-}
-#body h2 {
-  height: 28px;
-  line-height: 28px;
-  text-indent: -5000px;
-  width: 427px;
-  background-position: left top;
-  background-repeat: no-repeat;
-}
-body.home #body {
-  background-image: url({{ site.baseurl }}/images/backgrounds/home.jpg);
-  background-position: left bottom;
-}
-body.about #body {
-  background-image: url({{ site.baseurl }}/images/backgrounds/about.jpg);
-}
-body.services #body {
-  background-image: url({{ site.baseurl }}/images/backgrounds/services.jpg);
-}
-body.contact #body {
-  background-image: url({{ site.baseurl }}/images/backgrounds/contact.jpg);
-}
-body.home #body h2 {
-  background-image: url({{ site.baseurl }}/images/headers/home.png);
-  height: 74px;
-  margin-top: 0px;
-  width: 427px;
-}
-body.home #body p {
-  clear: left;
-  width: 427px;
-}
-body.about #body h2 {
-  background-image: url({{ site.baseurl }}/images/headers/about.png);
-}
-body.services #body h2 {
-  background-image: url({{ site.baseurl }}/images/headers/services.png);
-}
-body.testimonials #body h2 {
-  background-image: url({{ site.baseurl }}/images/headers/testimonials.png);
-}
-body.contact #body h2 {
-  background-image: url({{ site.baseurl }}/images/headers/contact.png);
-}
-#quotes {
-  margin: 20px 0 0 0;
-}
-#quotes blockquote {
-  margin: 0;
-}
-#quotes blockquote p.quote {
-  color: #390B50;
-  font-family: Georgia, Times New Roman, serif;
-  font-size: 18px;
-  font-style: italic;
-  line-height: 24px;
-  position: relative;
-  text-indent: -8px;
-}
-#quotes blockquote p.quote:before {
-  content: '“';
-  font-size: 32px;
-  vertical-align: -6px;
-  width: 8px;
-  display: inline-block;
-}
-#quotes blockquote p.quote:after {
-  content: '”';
-  font-size: 28px;
-  margin-left: 12px;
-  vertical-align: -6px;
-  display: inline-block;
-}
-#quotes blockquote h4 {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  margin: 10px 0px 0px 0px;
-}
-#quotes blockquote p.position {
-  color: #666666;
-  font-size: 10px;
-  line-height: 14px;
-  text-transform: uppercase;
-  margin: 0;
-}
-#testimonial-quotes {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-#testimonial-quotes li {
-  display: none;
-}
-#testimonial-quotes blockquote {
-  background: url({{ site.baseurl }}/images/openq.png) no-repeat left top;
-  margin: 0px 0px 15px 0px;
-  padding: 0px;
-}
-#testimonial-quotes blockquote span {
+
+#header h1 a {
+  background: url({{ site.baseurl }}/images/logo.png);
+  background: url({{ site.baseurl }}/images/logo.svg), linear-gradient(transparent, transparent);
   display: block;
-  background: url({{ site.baseurl }}/images/closeq.png) no-repeat right bottom;
-  padding: 5px 40px 10px 40px;
+  height: 84px;
+  text-align: right;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 168px;
 }
-#testimonial-quotes p img {
-  display: block;
-}
-body.testimonials div.right {
-  width: 467px;
-}
-body.testimonials div.right h2,
-body.testimonials div.right h3,
-body.testimonials div.right p {
-  margin-left: 40px;
-}
-#testimonial-names {
-  list-style: none;
-  margin: 85px 0px 0px 40px;
-  padding: 0px;
-  float: left;
-  display: inline;
-  width: 350px;
-  font-size: 16px;
-  line-height: 16px;
-}
-#testimonial-names li {
-  margin: 0px 0px 12px 0px;
-}
-#testimonial-names a {
-  display: block;
-  color: #000000;
-  text-decoration: none;
-  padding: 2px 0px 0px 8px;
-  border-left: 3px solid #FFFFFF;
-  outline: none;
-}
-#testimonial-names a span {
-  color: #666666;
-  font-size: 9px;
-  line-height: 12px;
-  text-transform: uppercase;
-}
-#testimonial-names a:hover {
-  color: #84C3D6;
-}
-#testimonial-names a:hover span {
-  color: #84C3D6;
-}
-#testimonial-names a.current {
-  color: #84C3D6;
-  border-left: 3px solid #84C3D6;
-}
-#testimonial-names a.current span {
-  color: #84C3D6;
-}
-#footer {
-  clear: both;
-  font-size: 14px;
-  line-height: 18px;
-  padding: 10px 0px 30px 0px;
-}
-#footer p {
-  margin: 0px;
-}
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-  }
-* html .clearfix             { zoom: 1; }
-*:first-child+html .clearfix { zoom: 1; }
